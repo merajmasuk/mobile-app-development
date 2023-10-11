@@ -21,15 +21,11 @@ public class FormActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_form);
 
-        tvShow = findViewById(R.id.tvShow);
-
         btnSubmit = findViewById(R.id.btnSubmit);
         tvStart = findViewById(R.id.tvStart);
         tvDest = findViewById(R.id.tvDest);
-        tvDateTime = findViewById(R.id.tvDateTime);
         edtStart = findViewById(R.id.edtStart);
         edtDest = findViewById(R.id.edtDest);
-        edtDateTime = findViewById(R.id.edtDateTime);
 
         btnSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
