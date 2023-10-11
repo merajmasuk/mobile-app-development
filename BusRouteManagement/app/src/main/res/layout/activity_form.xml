@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    tools:context=".FormActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -22,6 +23,14 @@
                 android:ems="18"
                 android:text="Start" />
 
+            <EditText
+                android:id="@+id/edtStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter start position"
+                android:ems="18"
+                android:inputType="text" />
+
             <TextView
                 android:id="@+id/tvDest"
                 android:layout_width="wrap_content"
@@ -29,8 +38,25 @@
                 android:ems="18"
                 android:text="Destination" />
 
+            <EditText
+                android:id="@+id/edtDest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your destination"
+                android:ems="18"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:layout_gravity="center"></Button>
+
         </LinearLayout>
 
     </ScrollView>
+
+
 
 </LinearLayout>
