@@ -66,4 +66,8 @@ public class DBHelper extends SQLiteOpenHelper {
         cursor.close();
         return busList;
     }
+
+    public void refreshDb() {
+
+    }
 }
