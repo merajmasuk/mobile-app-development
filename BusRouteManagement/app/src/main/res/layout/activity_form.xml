@@ -7,56 +7,49 @@
     android:orientation="vertical"
     tools:context=".FormActivity">
 
-    <ScrollView
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/startTextInputLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:hintTextAppearance="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxBackgroundMode="outline">
 
-        <LinearLayout
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtStart"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:hint="Start"
+            android:inputType="text" />
 
-            <TextView
-                android:id="@+id/tvStart"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ems="18"
-                android:text="Start" />
+    </com.google.android.material.textfield.TextInputLayout>
 
-            <EditText
-                android:id="@+id/edtStart"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Enter start position"
-                android:ems="18"
-                android:inputType="text" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/destTextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:hintTextAppearance="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxBackgroundMode="outline">
 
-            <TextView
-                android:id="@+id/tvDest"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ems="18"
-                android:text="Destination" />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtDest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Destination"
+            android:inputType="text" />
 
-            <EditText
-                android:id="@+id/edtDest"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Enter your destination"
-                android:ems="18"
-                android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
 
-            <Button
-                android:id="@+id/btnSubmit"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Submit"
-                android:layout_gravity="center"></Button>
-
-        </LinearLayout>
-
-    </ScrollView>
-
-
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Submit" />
 
 </LinearLayout>
